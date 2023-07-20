@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 애니메이션 지속 시간 조절 */
+.content3_wrap {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.content3_1 {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.content3_1 div:nth-child(1) {
+  width: 90%;
+  background: black;
+}
+.content3_1 div:nth-child(1) p {
+  font-size: 255px;
+  color: #cdc6be;
+  font-weight: bold;
+}
+.content3_1 div:nth-child(2) {
+  width: 20%;
+  background-image: url("../../public/img/stamp(2).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content3_2 {
+  margin-top: 80px;
+}
+.content3_2 ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.content3_2 ul li:nth-of-type(1) .text_trigger {
+  background-image: url("../../public/img/site1.png");
+  background-size: cover;
+}
+.content3_2 ul li:nth-of-type(2) .text_trigger {
+  background-image: url("../../public/img/site2.JPG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content3_2 ul li:nth-of-type(3) .text_trigger {
+  background-image: url("../../public/img/site3.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content3_2 ul li:nth-of-type(4) .text_trigger {
+  background-image: url("../../public/img/site4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content3_2 ul li {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.content3_2 ul li div {
+  margin-top: 50px;
+  width: 40%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 1.5s;
+  filter: blur(0.6px) grayscale(1);
+}
+.content3_2 ul li div:hover {
+  filter: none;
+}
+.content3_2 ul li div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: none;
+}
+.content3_2 ul li .text_box h1 {
+  font-size: 80px;
+  padding: 10px 0;
+  font-family: "Caladea";
+  font-weight: bold;
+  color: #cdc6be;
+  opacity: 1;
+  text-align: center;
+  background: black;
+}
+.content3_2 ul li .text_box p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: start;
+}
+.content3_2 ul li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.text_on {
+  transition: all 1s;
+  animation: fillFromLeft 1s forwards;
+  background-image: linear-gradient(to left, white 0%, black 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+}
+
+@keyframes fillFromLeft {
+  to {
+    background-position: left;
+    color: #cdc6be;
+  }
+}
+@media (min-width: 1106px) and (max-width: 1344px) {
+  .content3_2 ul li .text_box h1:nth-child(1) {
+    font-size: 65px;
+  }
+  .content3_2 ul li .text_box p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1106px) {
+  .content3_2 ul li .text_box h1:nth-child(1) {
+    font-size: 60px;
+  }
+  .content3_2 ul li .text_box h1 {
+    font-size: 60px;
+  }
+  .content3_2 ul li .text_box p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 434px) and (max-width: 768px) {
+  .content3_2 ul li {
+    flex-direction: column;
+  }
+  .content3_2 ul li .text_trigger {
+    width: 100%;
+    height: 500px;
+  }
+  .content3_2 ul li .text_box {
+    width: 100%;
+  }
+  .content3_2 ul li .text_box h1:nth-child(1) {
+    font-size: 65px;
+  }
+  .content3_2 ul li .text_box p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .content3_2 ul li:nth-child(even) {
+    flex-direction: column;
+  }
+}
+@media (min-width: 338px) and (max-width: 433px) {
+  .content3_2 ul li {
+    flex-direction: column;
+  }
+  .content3_2 ul li .text_trigger {
+    width: 100%;
+    height: 500px;
+  }
+  .content3_2 ul li .text_box {
+    width: 100%;
+  }
+  .content3_2 ul li .text_box h1:nth-child(1) {
+    font-size: 50px;
+  }
+  .content3_2 ul li .text_box p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .content3_2 ul li:nth-child(even) {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Content3.css.map */
